@@ -6,7 +6,7 @@ if number < 0:
     last_digit *= (-1)
 sign_info = ''
 if last_digit > 5:
-  sign_info = 'and is greater than 5'
+    sign_info = 'and is greater than 5'
 elif last_digit == 0:
       sign_info = 'and is 0'
 else:
