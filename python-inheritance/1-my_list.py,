@@ -1,1 +1,10 @@
-1-my_list.py, tests/1-my_list.txt
+#!/usr/bin/python3
+"""Inherits from list"""
+
+
+class MyList(list):
+    """inherits from list"""
+
+    def print_sorted(self):
+        """print sorted list"""
+        print(sorted(self))
