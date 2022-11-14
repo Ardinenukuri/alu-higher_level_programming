@@ -1,1 +1,7 @@
-5-base_geometry.py
+#!/usr/bin/python3
+"""empty class"""
+
+
+class BaseGeometry:
+    """empty"""
+    pass
