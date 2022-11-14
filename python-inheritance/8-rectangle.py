@@ -1,17 +1,18 @@
 #!/usr/bin/python3
-"""public instance method"""
+"""Defines a class Rectangle that inherits from BaseGeometry."""
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
-class BaseGeometry:
-    """public instance method"""
-    def area(self):
-        """raises an exception"""
-        raise Exception("area() is not implemented")
+class Rectangle(BaseGeometry):
+    """Represent a rectangle using BaseGeometry."""
 
-    def integer_validator(self, name, value):
-        """validates value"""
-        x = isinstance(value, int)
-        if not x:
-            raise TypeError("{} must be an integer".format(name))
-        if value <= 0:
-            raise ValueError("{} must be greater than 0".format(name))
+    def __init__(self, width, height):
+        """Intialize a new Rectangle.
+        Args:
+            width (int): The width of the new Rectangle.
+            height (int): The height of the new Rectangle.
+        """
+        self.integer_validator("width", width)
+        self.__width = width
+        self.integer_validator("height", height)
+        self.__height = height
