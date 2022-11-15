@@ -16,4 +16,4 @@ class Student:
     def to_json(self):
         """Public method to retrieve dictionary representation"""
 
-        return self.
+        return self.__dict__
