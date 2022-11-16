@@ -1,13 +1,11 @@
 #!/usr/bin/python3
-"""
-Module 6-load_from_json_file.py
-"""
+'''A function that reads a json file'''
 
 
-def load_from_json_file(filename):
-    """“JSON file”"""
+import json
 
-    import json
 
-    with open(filename, mode="r", encoding="utf-8") as f:
-        return json.load(f)
+def save_to_json_file(my_obj, filename):
+    '''saves a doc to a json format'''
+    with open(filename, 'w+') as f:
+        return json.dump(my_obj, f)
