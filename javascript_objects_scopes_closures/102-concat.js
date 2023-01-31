@@ -8,4 +8,4 @@ fs.writeFileSync(args[2], fileC, (err) => {
   if (err) {
     console.log(err);
   }
-};
+});
